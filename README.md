@@ -1,5 +1,5 @@
 # 🔬 Mejora de Videos de Laser Metal Deposition
-
+![Mejora de video](assets/metal_pool_collage.png)
 Este repositorio proporciona una **pipeline para el preprocesamiento y mejora de videos de alta frecuencia** de procesos de **Laser Metal Deposition (LMD)**.  
 Los videos contienen el **movimiento rectilíneo de una piscina de metal fundido** grabado en **blanco y negro con muy alto contraste**.  
 
