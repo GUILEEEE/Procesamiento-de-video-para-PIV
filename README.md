@@ -44,7 +44,7 @@ Instalar dependencias:
 ```bash
 pip install opencv-python numpy torch tqdm
 ```
-## ▶️ Uso
+## Uso
 1. Recorte de ROI
 ```python
 input_video = "data/raw/pool_original.avi"
@@ -78,14 +78,12 @@ python inference_realesrgan.py -n RealESRGAN_x4plus \
     --fp32 --tile 200 --gpu-id 0
 ```
 ## 📊 Flujo del Proceso
-
-flowchart TD
-    A[Video de entrada] --> B[Recorte automático de ROI]
-    B --> C[Umbralización (Pre-CLAHE)]
-    C --> D[Mejora con CLAHE]
-    D --> E[Umbralización (Post-CLAHE)]
-    E --> F[Modelos de Super-Resolución]
-    F --> G[Video de salida mejorado]
+1. A[Video de entrada] --> B[Recorte automático de ROI]
+2. B --> C[Umbralización (Pre-CLAHE)]
+3. C --> D[Mejora con CLAHE]
+4. D --> E[Umbralización (Post-CLAHE)]
+5. E --> F[Modelos de Super-Resolución]
+6. F --> G[Video de salida mejorado]
 
 ## 📁 Estructura del Proyecto
 ```bash
