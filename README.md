@@ -78,7 +78,7 @@ python inference_realesrgan.py -n RealESRGAN_x4plus \
     --fp32 --tile 200 --gpu-id 0
 ```
 ## 📊 Flujo del Proceso
-```mermaid
+
 flowchart TD
     A[Video de entrada] --> B[Recorte automático de ROI]
     B --> C[Umbralización (Pre-CLAHE)]
@@ -86,7 +86,7 @@ flowchart TD
     D --> E[Umbralización (Post-CLAHE)]
     E --> F[Modelos de Super-Resolución]
     F --> G[Video de salida mejorado]
-```
+
 ## 📁 Estructura del Proyecto
 ```bash
 ├── inputs/                  # Frames recortados
